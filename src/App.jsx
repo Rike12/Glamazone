@@ -7,7 +7,7 @@ import {Route, Routes} from 'react-router-dom';
 
 import Login from './Login';
 import Signup from './Signup';
-import Footer from './Footer'
+import Hero from './Hero'
 
 
 
@@ -19,7 +19,7 @@ function App() {
         
         <Route path='/signup' element={<Signup />} />
         <Route path='/' element={<Login />} />
-        <Route path='/footer' element={<Footer />} />
+        <Route path='/hero' element={<Hero />} />
        
 </Routes>
     </>
