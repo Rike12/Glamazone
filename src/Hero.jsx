@@ -7,7 +7,7 @@ import search from './assets/search.png';
 const Hero = ({ cartCount }) => {
   return (
     <section
-      className="relative h-screen bg-auto "
+      className="relative h-[550px] bg-[#FFF4F4] bg-repeat-x pb-20 bg-contain"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="ml-8 max-w-md pt-20">
@@ -35,14 +35,14 @@ const Hero = ({ cartCount }) => {
           />
         </div>
 
-        <div className="text-gray-600 mb-4 ml-4  text-center italic text-md">
+        <div className="text-gray-600 mb-4 ml-4 text-center italic text-md">
           <p>Explore our collections, indulge in some self-care,</p>
           <p>and embrace your inner glam! We can't wait to be</p>
           <p>a part of your beauty story.</p>
         </div>
       </div>
 
-      <div className="absolute bottom-40 right-24 text-lg text-center text-gray-700">
+      <div className="absolute bottom-40 right-36 text-lg text-center text-gray-700">
         <p>
           Start your beauty journey with{' '}
           <span className="text-[#EC5766] font-dancing text-xl">Glamazone</span>
