@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Face from './assets/face.png';
+import Lady from './assets/lady.png';
 import Logo from './assets/logo.png';
 import Google from './assets/google.png';
 import Apple from './assets/apple.png';
 import Eye from './assets/eye.png';
 
-const LoginPage = () => {
+const Signin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [emailError, setEmailError] = useState('');
@@ -105,11 +105,11 @@ const LoginPage = () => {
       <div className="flex min-h-screen items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="bg-[#FFF4F4] rounded-lg shadow-lg p-8 sm:p-12 lg:p-20 w-full grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="md:block">
-            <img src={Face} alt="Login Image" className="h-full object-cover rounded-lg shadow-lg" />
+            <img src={Lady} alt="Login Image" className="h-full object-cover rounded-lg shadow-lg" />
           </div>
           <div className="p-4 md:p-8">
             <h2 className="text-2xl md:text-3xl font-semibold text-[#EC5766] mb-6 text-center">
-              Log in to your account
+              Create an account
             </h2>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
@@ -130,7 +130,7 @@ const LoginPage = () => {
               <div className="relative">
                 <input
                   type={showPassword ? 'text' : 'password'}
-                  placeholder="Password (numeric only)"
+                  placeholder="Password"
                   id="password"
                   className={`mt-1 block bg-[#FFF4F4] px-3 py-2 w-full p-2 border border-[#858885] rounded-md focus:ring-red-500 focus:border-red-500 pr-10 ${
                     passwordError ? 'border-red-500' : ''
@@ -153,7 +153,32 @@ const LoginPage = () => {
                   <p className="text-red-500 text-xs mt-1">{passwordError}</p>
                 )}
               </div>
-              
+              <div className="relative">
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  placeholder="Confirm Password "
+                  id="password"
+                  className={`mt-1 block bg-[#FFF4F4] px-3 py-2 w-full p-2 border border-[#858885] rounded-md focus:ring-red-500 focus:border-red-500 pr-10 ${
+                    passwordError ? 'border-red-500' : ''
+                  }`}
+                  pattern="[0-9]*" // Ensure only numeric input
+                  value={password}
+                  onChange={handlePasswordChange}
+                />
+                <span
+                  className="absolute inset-y-0 right-0 flex items-center pr-3 cursor-pointer"
+                  onClick={togglePasswordVisibility}
+                >
+                  <img
+                    src={Eye}
+                    alt="Eye Icon"
+                    className="h-5 w-5"
+                  />
+                </span>
+                {passwordError && (
+                  <p className="text-red-500 text-xs mt-1">{passwordError}</p>
+                )}
+              </div>
               {loginError && (
                 <p className="text-red-500 text-xs mt-1">{loginError}</p>
               )}
@@ -167,7 +192,7 @@ const LoginPage = () => {
                 type="submit"
                 className="w-full py-3 px-4 bg-[#EC5766] text-white rounded-md shadow hover:bg-red-600"
               >
-                Login
+                Register
               </button>
             </form>
             <div className="mt-6 text-center">
@@ -195,9 +220,9 @@ const LoginPage = () => {
             </div>
             <div className="mt-6 text-center">
               <p className="text-[#1E1E1E]">
-                Don't have an account?{' '}
-                <a href="/signup" className="text-[#EC5766] font-semibold">
-                  Sign up
+                Already have an account?{' '}
+                <a href="/" className="text-[#EC5766] font-semibold">
+                  Sign in
                 </a>
               </p>
             </div>
@@ -208,4 +233,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Signin;
