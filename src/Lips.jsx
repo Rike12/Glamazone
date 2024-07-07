@@ -20,7 +20,7 @@ const productList = [
   {
     id: 1,
     category: 'Lips',
-    name: 'Pro Filtr Soft Matte Longwear Liquid Foundation',
+    name: 'Flormar Healthy Glow Dewy Lip Lacquer 03 Lively 6.5ml',
     image: Frame1,
     price: '₦20,422.41',
     colors: ['#EC5766', '#EC57B0', '#813405', '#810505', '#DA0000', '#C900CD'],
@@ -28,7 +28,7 @@ const productList = [
   {
     id: 2,
     category: 'Lips',
-    name: 'Studio Fix Fluid SPF 15 Foundation',
+    name: 'Dior Addict Lip Glow Oil, 015 Cherry',
     image: Frame2,
     price: '₦32,865.32',
     colors: ['#EC5766', '#EC57B0', '#DA0000'],
@@ -36,7 +36,7 @@ const productList = [
   {
     id: 3,
     category: 'Lips',
-    name: 'Clinique Stay-Matte Oil-Free Makeup Foundation CN74 Beige 30ml',
+    name: 'Channel Rouge Allure Velvet Luminous Matte Lip Colour 57 3.5g',
     image: Frame3,
     price: '₦105,499.41',
     colors: ['#FF001A', '#EC57B0', '#FF3E3E', '#DA0000'],
@@ -44,7 +44,7 @@ const productList = [
   {
     id: 4,
     category: 'Lips',
-    name: 'IT Cosmetics CC+ Oil-Free Matte Foundation SPF40 Light Medium 32ml',
+    name: 'Essence Tinted Kiss Hydrating Lip Tint 02 Mauvelous 4ml',
     image: Frame4,
     price: '₦7,422.41',
     colors: ['#FF0000', '#E30000', '#FF5959', '#B80202'],
@@ -52,7 +52,7 @@ const productList = [
   {
     id: 5,
     category: 'Lips',
-    name: 'IT Cosmetics Your Skin But Better Foundation 30m',
+    name: 'Shiseido VisionAiry Gel Lipstick 203 Night Rose 1.6g',
     image: Frame5,
     price: '₦47,327.71',
     colors: ['#FF001A', '#FF006B', '#864145','#DA0000', '#FF929D'],
@@ -60,7 +60,7 @@ const productList = [
   {
     id: 6,
     category: 'Lips',
-    name: 'Pür Cosmetics 4-in-1 Liquid Foundation',
+    name: 'Clarins Joli Rouge Satin Lipstick 787 Camellia Nude 3.5g',
     image: Frame6,
     price: '₦69,999.99',
     colors: ['#FF001A', '#B3746C', '#EC5766','850918'],
@@ -68,7 +68,7 @@ const productList = [
   {
     id: 7,
     category: 'Lips',
-    name: 'Hourglass Vanish Seamless Finish Foundation Stick',
+    name: 'Shiseido TechnoSatin Gel Lipstick 411 Scarlet Cluster 3.3g',
     image: Frame7,
     price: '₦71,064,91',
     colors: ['#FF001A', '#EE008F'],
@@ -76,7 +76,7 @@ const productList = [
   {
     id: 8,
     category: 'Lips',
-    name: 'Giorgio Armani Luminous Silk Foundation',
+    name: 'Eveline Cosmetics Diamond Glow Lip Luminizer 4.5ml',
     image: Frame8,
     price: '₦9,044.41',
     colors: ['#EC5766', '#F4B3CA', '#FF3E3E'],
@@ -84,7 +84,7 @@ const productList = [
   {
     id: 9,
     category: 'Lips',
-    name: 'MAC Face and Body Foundation',
+    name: 'Estée Lauder Pure Color Desire Lipstick 305 Dont Stop 3.1g',
     image: Frame9,
     price: '₦72,281.91',
     colors: ['#850918', '#EE0000', '#EE0000', '410000'],
@@ -92,7 +92,7 @@ const productList = [
   {
     id: 10,
     category: 'Lips',
-    name: 'Nars All Day Luminous Weightless Foundation',
+    name: 'Laka Bonding Glow Lipstick 204 Have 3.7g',
     image: Frame10,
     price: '₦39,681.15',
     colors: ['#F0898D', '#970000', '#FF3E3E','#C46F57'],

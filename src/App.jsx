@@ -9,7 +9,7 @@ import Login from './Login';
 import Signup from './Signup';
 import Product from './Product';
 import Cart from './Cart';
-import Productlist from './Productlist';
+import Foundation from './Foundation';
 
 
 
@@ -24,7 +24,7 @@ function App() {
         <Route path='/' element={<Login />} />
         <Route path='/product' element={<Product/>} />
         <Route path='/cart' element={<Cart/>} />
-        <Route path='/productlist' element={<Productlist/>} />
+        <Route path='/foundation' element={<Foundation/>} />
       
        
 </Routes>
