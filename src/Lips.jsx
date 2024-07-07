@@ -158,10 +158,10 @@ const ProductList = () => {
         <button className="absolute left-0 z-10 p-2">
           <img src={Arrowl} alt="Arrow Left" className="h-8" />
         </button>
-        <div  className="flex space-x-6  mx-10">
+        <div  className="flex space-x-6 mx-10 overflow-x-hidden scrollbar-hide">
           {productList.map((product) => (
             <div key={product.id} className="min-w-[300px]">
-              <Product product={product} />
+              <Lips product={product} />
             </div>
           ))}
         </div>

@@ -7,7 +7,7 @@ import search from './assets/search.png';
 const Hero = ({ cartCount }) => {
   return (
     <section
-      className="relative h-[550px] bg-[#FFF4F4] bg-repeat-x pb-20 bg-contain"
+      className="relative h-[550px]  bg-repeat-x pb-20 bg-contain"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="ml-8 max-w-md pt-20">
@@ -45,7 +45,7 @@ const Hero = ({ cartCount }) => {
       <div className="absolute bottom-40 right-36 text-lg text-center text-gray-700">
         <p>
           Start your beauty journey with{' '}
-          <span className="text-[#EC5766] font-dancing text-xl">Glamazone</span>
+          <span className="text-[#EC5766] font-dancing text-2xl logo">Glamazone</span>
         </p>
         <p>All Things Beauty</p>
       </div>

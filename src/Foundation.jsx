@@ -19,7 +19,7 @@ import Frame10 from './assets/Foundation/frame10.png';
 const productList = [
   {
     id: 1,
-    category: 'Lips',
+    category: 'Foundation',
     name: 'Pro Filtr Soft Matte Longwear Liquid Foundation',
     image: Frame1,
     price: '₦32,865.32',
@@ -27,7 +27,7 @@ const productList = [
   },
   {
     id: 2,
-    category: 'Lips',
+    category: 'Foundation',
     name: 'Studio Fix Fluid SPF 15 Foundation',
     image: Frame2,
     price: '₦39,999.99',
@@ -35,7 +35,7 @@ const productList = [
   },
   {
     id: 3,
-    category: 'Lips',
+    category: 'Foundation',
     name: 'Clinique Stay-Matte Oil-Free Makeup Foundation CN74 Beige 30ml',
     image: Frame3,
     price: '₦69,895.65',
@@ -43,7 +43,7 @@ const productList = [
   },
   {
     id: 4,
-    category: 'Lips',
+    category: 'Foundation',
     name: 'IT Cosmetics CC+ Oil-Free Matte Foundation SPF40 Light Medium 32ml',
     image: Frame4,
     price: '₦77,063.44',
@@ -51,7 +51,7 @@ const productList = [
   },
   {
     id: 5,
-    category: 'Lips',
+    category: 'Foundation',
     name: 'IT Cosmetics Your Skin But Better Foundation 30m',
     image: Frame5,
     price: '₦71,533.42',
@@ -59,7 +59,7 @@ const productList = [
   },
   {
     id: 6,
-    category: 'Lips',
+    category: 'Foundation',
     name: 'Pür Cosmetics 4-in-1 Liquid Foundation',
     image: Frame6,
     price: '₦39,999.99',
@@ -67,7 +67,7 @@ const productList = [
   },
   {
     id: 7,
-    category: 'Lips',
+    category: 'Foundation',
     name: 'Hourglass Vanish Seamless Finish Foundation Stick',
     image: Frame7,
     price: '₦46,999.99',
@@ -75,7 +75,7 @@ const productList = [
   },
   {
     id: 8,
-    category: 'Lips',
+    category: 'Foundation',
     name: 'Giorgio Armani Luminous Silk Foundation',
     image: Frame8,
     price: '₦64,999.99',
@@ -83,7 +83,7 @@ const productList = [
   },
   {
     id: 9,
-    category: 'Lips',
+    category: 'Foundation',
     name: 'MAC Face and Body Foundation',
     image: Frame9,
     price: '₦28,999.99',
@@ -91,7 +91,7 @@ const productList = [
   },
   {
     id: 10,
-    category: 'Lips',
+    category: 'Foundation',
     name: 'Nars All Day Luminous Weightless Foundation',
     image: Frame10,
     price: '₦48,999.99',
@@ -139,12 +139,12 @@ const Foundation = ({ product }) => {
 const ProductList = () => {
   return (
     <div className="p-4 relative">
-      <h1 className="text-2xl font-semibold ml-16">Lips</h1>
+      <h1 className="text-2xl font-semibold ml-16">Foundation</h1>
       <div className="relative flex items-center">
         <button className="absolute left-0 z-10 p-2">
           <img src={Arrowl} alt="Arrow Left" className="h-8" />
         </button>
-        <div className="flex space-x-6 mx-10 overflow-x-scroll scrollbar-hide">
+        <div className="flex space-x-6 mx-10 overflow-x-hidden scrollbar-hide">
           {productList.map((product) => (
             <div key={product.id} className="min-w-[300px]">
               <Foundation product={product} />
