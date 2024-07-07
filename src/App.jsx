@@ -8,7 +8,8 @@ import {Route, Routes} from 'react-router-dom';
 import Login from './Login';
 import Signup from './Signup';
 import Product from './Product';
-import Success from './Successful';
+import Cart from './Cart';
+import Productlist from './Productlist';
 
 
 
@@ -22,7 +23,9 @@ function App() {
         <Route path='/signup' element={<Signup />} />
         <Route path='/' element={<Login />} />
         <Route path='/product' element={<Product/>} />
-        <Route path='/success' element={<Success/>} />
+        <Route path='/cart' element={<Cart/>} />
+        <Route path='/productlist' element={<Productlist/>} />
+      
        
 </Routes>
     </>
