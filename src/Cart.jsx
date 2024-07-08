@@ -8,9 +8,9 @@ import Shopping from './Shopping';
 
 const Cart = () => {
   return (
-    <div className='bg-[#FFF4F4] min-h-screen flex flex-col'>
+    <div className='bg-[#FFF4F4] h-[1400px] w-[1440px] flex flex-col'>
       {/* Header */}
-      <header className="p-8">
+      <header className="p-8 h-[140px] w-[2400px]">
         <div className="container flex gap-8">
           <div className="flex space-x-2">
             <img src={Logo} alt="Logo" className="h-8" />
@@ -30,29 +30,31 @@ const Cart = () => {
       </header>
 
       {/* Hero */}
-      <div className="flex  items-center px-8">
-      <div className="relative max-w-lg w-full  ml-10 mb-40">
+      <div className="flex  items-center justify-around   h-[350px] w-[1440px]  ">
+
+
+      <div className="relative max-w-lg w-full mb-48 ">
           <img
             src={search}
             alt="Search icon"
-            className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5"
+            className="absolute left-3 top-1/2 transform -translate-y-1/2 ml-10 w-5 h-5"
           />
           <input
             type="text"
-            className="border border-black bg-[#FFF4F4] rounded-full py-2 pl-10 pr-4 focus:outline-none w-full"
+            className="border border-black bg-[#FFF4F4] rounded-full py-2  ml-10 pl-10 pr-4 focus:outline-none w-full"
           />
         </div>
         <div
-          className="w-full h-96 bg-no-repeat bg-contain "
+          className="h-[350px] w-[1440px]   bg-no-repeat bg-contain  mr-20"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         ></div>
        
       </div>
 
       {/* ShoppingCart */}
-      <div className="flex-grow">
+      <div className='mb-6'>
         <Shopping />
-      </div>
+        </div>
 
       {/* Footer */}
       <Footer />
