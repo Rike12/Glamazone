@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from './assets/logo.png';
 import './App.css';
 import search from './assets/search.png';
@@ -11,23 +12,24 @@ const Cart = () => {
     <div className='bg-[#FFF4F4] h-[1400px] w-[1440px] flex flex-col'>
       {/* Header */}
       <header className="p-8 h-[140px] w-[2400px]">
-        <div className="container flex gap-8">
-          <div className="flex space-x-2">
-            <img src={Logo} alt="Logo" className="h-8" />
-            <h1 className='text-[#EC5766] text-2xl logo'>Glamazone</h1>
-          </div>
-          <nav className="flex space-x-16 mt-2 ml-80">
-            <a href="/product" className="text-[#060B0F] relative">
-              Our Products
-            </a>
-            <a href="/cart" className="text-[#060B0F] relative">
-              Cart
-              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#EC5766]"></span>
-            </a>
-            <a href="/checkout" className="text-[#060B0F]">Check Out</a>
-          </nav>
-        </div>
-      </header>
+  <div className="container flex gap-8">
+    <div className="flex space-x-2">
+      <img src={Logo} alt="Logo" className="h-8" />
+      <h1 className='text-[#EC5766] text-2xl logo'>Glamazone</h1>
+    </div>
+    <nav className="flex space-x-16 mt-2 ml-80">
+      <Link to="/" className="text-[#060B0F] relative">
+        Our Products
+      </Link>
+      <Link to="#" className="text-[#060B0F] relative">
+        Cart
+        <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#EC5766]"></span>
+      </Link>
+      <Link to="/checkout" className="text-[#060B0F]">Check Out</Link>
+    </nav>
+  </div>
+</header>
+
 
       {/* Hero */}
       <div className="flex  items-center justify-around   h-[350px] w-[1440px]  ">
