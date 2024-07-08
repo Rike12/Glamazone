@@ -1,6 +1,6 @@
 import React from 'react';
+import './App.css';
 import Logo from './assets/logo.png';
-import Logoo from './assets/logoo.png';
 import Twitter from './assets/twitter.png';
 import Instagram from './assets/instagram.png';
 import Facebook from './assets/facebook.png';
@@ -9,9 +9,11 @@ const Footer = () => {
   return (
     <div className="bg-[#4E3D42] px-24 py-4">
       <div className="flex justify-between items-start">
-        <div>
-          <img src={Logoo} alt="Logo" className="h-8 mt-4" />
-        </div>
+      <div className="flex">
+  <img src={Logo} alt="Logo" className="h-8 " />
+  <h1 className='logo text-[#EC5766] text-2xl'>Glamazone</h1>
+   
+  </div>
         <div className="flex flex-1 justify-center mr-20 pt-2">
           <div className="flex gap-32 justify-center items-start">
             <div className="text-white">

@@ -1,41 +1,37 @@
 import React from 'react';
-import Logoo from './assets/logoo.png';
+import Logo from './assets/logo.png';
+import './App.css';
 import search from './assets/search.png';
 import backgroundImage from './assets/tray.png';
 import Footer from './Footer';
+import Shopping from './Shopping';
 
 const Cart = () => {
   return (
-    <div className='bg-[#FFF4F4] h-screen '>
-
+    <div className='bg-[#FFF4F4] min-h-screen flex flex-col'>
       {/* Header */}
-      <header className="py-8 px-8">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center">
-            <img src={Logoo} alt="Logo" className="h-8" />
+      <header className="p-8">
+        <div className="container flex gap-8">
+          <div className="flex space-x-2">
+            <img src={Logo} alt="Logo" className="h-8" />
+            <h1 className='text-[#EC5766] text-2xl logo'>Glamazone</h1>
           </div>
-          <div className='flex justify-between items-center'>
-            <nav className="flex gap-12 justify-between items-center ml-48">
-              <a href="#" className="text-[#060B0F] hover:text-[#EC5766] font-semibold">Home</a>
-              <a href="#" className="text-[#060B0F] hover:text-[#EC5766] font-semibold">About Us</a>
-              <a href="#" className="text-[#060B0F] hover:text-[#EC5766] font-semibold">Our Products</a>
-              <a href="#" className="text-[#060B0F] hover:text-[#EC5766] font-semibold">Contact Us</a>
-            </nav>
-          </div>
-          <div className="flex gap-10 mr-10">
-            <a href="#" className="bg-[#EC5766] text-white px-6 py-2 text-md rounded-full hover:bg-white hover:text-[#EC5766]">Shop now</a>
-            <a href="/signup" className="border border-[#EC5766] text-[#EC5766] px-6 py-2 rounded-full hover:bg-[#EC5766] hover:text-white">Sign up</a>
-          </div>
+          <nav className="flex space-x-16 mt-2 ml-80">
+            <a href="/product" className="text-[#060B0F] relative">
+              Our Products
+            </a>
+            <a href="#" className="text-[#060B0F] relative">
+              Cart
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#EC5766]"></span>
+            </a>
+            <a href="/checkout" className="text-[#060B0F]">Check Out</a>
+          </nav>
         </div>
       </header>
 
       {/* Hero */}
-      <div className="flex mt-4">
-        <div
-          className="absolute w-full h-full bg-no-repeat bg-contain ml-4"
-          style={{ backgroundImage: `url(${backgroundImage})` }}
-        ></div>
-        <div className="relative max-w-lg w-full ml-10 mt-24">
+      <div className="flex  items-center px-8">
+      <div className="relative max-w-lg w-full  ml-10 mb-40">
           <img
             src={search}
             alt="Search icon"
@@ -46,11 +42,20 @@ const Cart = () => {
             className="border border-black bg-[#FFF4F4] rounded-full py-2 pl-10 pr-4 focus:outline-none w-full"
           />
         </div>
+        <div
+          className="w-full h-96 bg-no-repeat bg-contain "
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        ></div>
+       
+      </div>
+
+      {/* ShoppingCart */}
+      <div className="flex-grow">
+        <Shopping />
       </div>
 
       {/* Footer */}
       <Footer />
-
     </div>
   );
 };

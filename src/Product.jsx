@@ -1,14 +1,17 @@
 import React from 'react';
 import Header from './Header';
-import Hero from './Hero';
+import Hero from './Hero'
 import Footer from './Footer';
+import ProductList from './Productlist';
 
-const Product = ({ cartCount }) => {
+const Product = () => {
   return (
-    <div className=" h-screen bg-[#FFF4F4]">
-      <Header className="h-16" />
-      <Hero className=" " cartCount={cartCount} />
-      <Footer className="h-16" />
+    <div className=" h-full bg-[#FFF4F4]">
+      <Header/>
+      <Hero/>
+      <ProductList/>
+      <Footer/>
+
     </div>
   );
 };

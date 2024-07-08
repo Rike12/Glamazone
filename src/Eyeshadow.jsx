@@ -110,7 +110,7 @@ const Eyeshadow = ({ product }) => {
 
       
   return (
-    <div className="p-4 bg-white rounded-lg  h-[500px] flex flex-col justify-between">
+    <div className="p-4 rounded-lg  h-[500px] flex flex-col justify-between">
       <div className=" bg-[#FFD7BE] relative">
         <img src={product.image} className="" alt={product.name} />
         <img src={Star} alt="Star" className="h-8 absolute top-2 right-2 m-2" />
@@ -144,14 +144,14 @@ const ProductList = () => {
   
 
   return (
-    <div className="p-4 relative">
-      <h1 className="text-2xl font-semibold mb-2 text-center">Our products</h1>
-      <h1 className="text-2xl font-semibold ml-16">Lips</h1>
+    <div className="relative">
+     
+      <h1 className="text-2xl font-medium ml-10">Eye Shadow</h1>
       <div className="relative flex items-center">
         <button className="absolute left-0 z-10 p-2">
           <img src={Arrowl} alt="Arrow Left" className="h-8" />
         </button>
-        <div  className="flex space-x-6 mx-10 overflow-x-hidden scrollbar-hide">
+        <div  className="flex space-x-6 mx-5 overflow-x-hidden scrollbar-hide">
           {productList.map((product) => (
             <div key={product.id} className="min-w-[300px]">
               <Eyeshadow product={product} />
