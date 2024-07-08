@@ -226,7 +226,12 @@ const Checkout = () => {
         Grand Total = <span>₦124,075.96</span>
       </div>
 
-      <button className="w-[854px] py-3 bg-red-500 justify-center items-center text-white font-bold rounded-lg">Place Order</button>
+      <Link to="/success" className="text-[#060B0F] relative">
+        
+        
+     <button className="w-[854px] py-3 bg-red-500 justify-center items-center text-white font-bold rounded-lg">Place Order</button>
+     </Link>
+  
     </div>
   );
 };
