@@ -43,14 +43,14 @@ const Shopping = () => {
   return (
     <div className=" p-2 h-[800px] w-[1350px] mb-20 ">
       <h2 className="text-center text-2xl font-semibold">Shopping Cart</h2>
-      <div className="w-full ml-4">
+      <div className="w-full ml-4 mt-8">
         {products.map(product => (
           <div key={product.id} className="flex items-center justify-between mb-6">
             <div className="flex items-center">
-              <img src={product.image} alt={product.name} className="bg-[#FFD7BE] p-2 h-[200px] w-[200px]" />
-              <div className="flex flex-col flex-grow ml-3">
-                <span className="font-medium text-[#130F10] w-2/5">{product.name}</span>
-                <div className="flex space-x-2 mt-1">
+              <img src={product.image} alt={product.name} className="bg-[#FFD7BE]  h-[200px] w-[200px]" />
+              <div className="flex flex-col flex-grow ml-6 mb-20">
+                <span className="font-normal text-[#130F10] w-2/5 ">{product.name}</span>
+                <div className="flex space-x-2 ">
                   <span>Color</span>
                   {product.color.map((color, index) => (
                     <div key={index} className="w-4 h-4 mt-1.5 rounded-full" style={{ backgroundColor: color }}></div>
@@ -61,7 +61,7 @@ const Shopping = () => {
               </div>
             </div>
 
-            <div className="flex flex-col items-end mr-10 mb-20 gap-10">
+            <div className="flex flex-col items-end mr-10 mb-40 gap-10">
               <div className="flex items-center justify-between gap-20">
                 <span className="flex flex-col">
                   <span className="flex">Price</span>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './assets/card.png';
 import './App.css';
+import { Link } from "react-router-dom";
 
 const CreditCardForm = () => {
   return (
@@ -50,7 +51,9 @@ const CreditCardForm = () => {
             />
           </div>
         </div>
-        <div className="flex items-start mb-4">
+
+        <div className='flex justify-between'>
+        <div className="flex items-start mt-4">
           <div className="flex items-center h-5">
             <input
               id="saveCard"
@@ -65,6 +68,15 @@ const CreditCardForm = () => {
             </label>
           </div>
         </div>
+        <Link to="/success">
+        <button
+      className="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-700"
+    >
+     Done
+    </button>
+    </Link>
+    </div>
+
       </form>
     </div>
   );

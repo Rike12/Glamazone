@@ -13,7 +13,7 @@ import Checkout from './Checkout';
 import LoginPage from './Login';
 import Carddetails from './Carddetails';
 import Success from './Successful';
-
+import Summary from './Summary';
 
 
 
@@ -30,6 +30,7 @@ function App() {
         <Route path='/checkout' element={<Checkout/>} />
         <Route path='/carddetails' element={<Carddetails/>} />
         <Route path='/success' element={<Success/>} />
+        <Route path='/summary' element={<Summary/>} />
        
 </Routes>
     </>

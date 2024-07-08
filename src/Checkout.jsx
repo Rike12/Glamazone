@@ -8,11 +8,23 @@ import Apple from './assets/apple.png';
 import Google from './assets/google.png';
 import Home from './assets/home.png';
 import './App.css';
+import product1 from './assets/frame1.png';
+import product2 from './assets/Foundation/frame1.png';
+import product3 from './assets/Powder/frame1.png';
+
+
+
+
+
+
+
 
 
 
 
 const Checkout = () => {
+
+
   return (
     <div className="bg-[#FFF4F4] h-[2500px] w-[1400px]  ">
 
@@ -39,7 +51,7 @@ const Checkout = () => {
   </div>
 </header>
 
-
+ {/* Deelivery */}
       <h2 className="text-2xl font-bold mb-4 ml-8">Delivery Information</h2>
       <form className="grid grid-cols-1 gap-6 mb-6 ml-8 w-[1280px] ">
   <div className="flex space-x-8 mb-4 mt-6">
@@ -124,7 +136,7 @@ const Checkout = () => {
     </div>
 </form>
 
-
+ {/* Payment */}
       <h2 className="text-2xl font-bold mb-4 ml-8">Payment Method</h2>
    <div className="  ml-8">
   <div className="mb-4 flex items-center gap-4 w-[1260px] border-b border-red-900 pb-3   ">
@@ -178,7 +190,7 @@ const Checkout = () => {
 </div>
 
 
-
+ {/* Summary */}
       <h2 className="text-2xl font-bold mb-4 ml-8">Order Summary</h2>
       <div className="mb-6">
         <div className="flex justify-between items-center border-b pb-2 mb-2">
@@ -226,7 +238,7 @@ const Checkout = () => {
         Grand Total = <span>₦124,075.96</span>
       </div>
 
-      <Link to="/success" className="text-[#060B0F] relative">
+      <Link to="/carddetails" className="text-[#060B0F] relative">
         
         
      <button className="w-[854px] py-3 bg-red-500 justify-center items-center text-white font-bold rounded-lg">Place Order</button>
