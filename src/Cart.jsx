@@ -20,7 +20,7 @@ const Cart = () => {
             <a href="/product" className="text-[#060B0F] relative">
               Our Products
             </a>
-            <a href="#" className="text-[#060B0F] relative">
+            <a href="/cart" className="text-[#060B0F] relative">
               Cart
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#EC5766]"></span>
             </a>
