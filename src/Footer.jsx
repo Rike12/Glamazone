@@ -7,15 +7,17 @@ import Facebook from './assets/facebook.png';
 
 const Footer = () => {
   return (
-    <div className="bg-[#4E3D42] px-24 py-4">
+    <div className="bg-[#4E3D42] px-24 pt-10 w-[1440px] h-[500px]  ">
+      <div className='w-[1200px] h-[480px]'>
       <div className="flex justify-between items-start">
-      <div className="flex">
+      <div className="flex mr-40 ">
   <img src={Logo} alt="Logo" className="h-8 " />
   <h1 className='logo text-[#EC5766] text-2xl'>Glamazone</h1>
    
   </div>
-        <div className="flex flex-1 justify-center mr-20 pt-2">
-          <div className="flex gap-32 justify-center items-start">
+ 
+        <div className="ml-54 flex flex-1 justify-center  pt-2 w-[600px]">
+          <div className="flex  justify-between gap-56 ml-24   ">
             <div className="text-white">
               <div className="text-md font-bold">Quick Links</div>
               <a className="my-1 block text-sm" href="/#">About Us <span className="text-teal-600 text-xs p-1"></span></a>
@@ -28,7 +30,7 @@ const Footer = () => {
               <a className="my-1 block text-sm" href="/#">Email <span className="text-teal-600 text-xs p-1"></span></a>
               <a className="my-1 block text-sm" href="/#">Address <span className="text-teal-600 text-xs p-1"></span></a>
             </div>
-            <div className="text-white">
+            <div className="text-white ml-10">
               <div className="text-md font-bold">Socials</div>
               <a className="my-1 block text-sm" href="/#">Instagram </a>
               <a className="my-1 block text-sm" href="/#">LinkedIn </a>
@@ -38,8 +40,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center">
-        <div className="w-full max-w-lg border-2 border-[#FBFFFC] rounded-md pb-4 bg-[#4E3D42]">
+      <div className=" ml-80 flex justify-center items-center mt-4 ">
+        <div className="w-[660px] h-[200px] border-2 border-[#FBFFFC]  rounded-md pt-8 bg-[#4E3D42]">
           <h2 className="text-white text-lg font-semibold text-center mt-4 mb-2">Subscribe to our Newsletter</h2>
           <form className="px-8">
             <div className="mb-2">
@@ -52,10 +54,11 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div className="">
-        <div className="flex justify-between text-sm text-white">
-          <div className="my-3">© 2024 Glamazone Inc</div>
-          <div className="flex gap-2">
+
+      <div className="w-[1340px] h-[25px] ">
+        <div className="flex justify-between text-sm text-white pt-10  pb-10">
+          <div className="">© 2024 Glamazone Inc</div>
+          <div className="flex gap-2 mr-40">
             <a href="/#" className="mx-1">
               <img src={Instagram} alt="Instagram" className="w-4" />
             </a>
@@ -67,6 +70,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

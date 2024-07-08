@@ -111,8 +111,8 @@ const Lips = ({ product }) => {
 
       
   return (
-    <div className="p-4 rounded-lg  h-[500px] flex flex-col justify-between">
-      <div className=" bg-[#FFD7BE] relative">
+    <div className="rounded-lg ml-4   h-[500px] flex flex-col justify-between">
+      <div className=" bg-[#FFD7BE] relative h-[350px] w-[300px]  ">
         <img src={product.image} className="" alt={product.name} />
         <img src={Star} alt="Star" className="h-8 absolute top-2 right-2 m-2" />
       </div>
@@ -153,7 +153,7 @@ const ProductList = () => {
   return (
     <div className="relative">
       <h1 className="text-2xl font-semibold mb-2 text-center">Our products</h1>
-      <h1 className="text-2xl font-medium ml-10">Lips</h1>
+      <h1 className="text-2xl mb-4 font-medium ml-10">Lips</h1>
       <div className="relative flex items-center">
         <button className="absolute left-0 z-10 p-2">
           <img src={Arrowl} alt="Arrow Left" className="h-8" />

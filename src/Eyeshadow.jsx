@@ -110,8 +110,8 @@ const Eyeshadow = ({ product }) => {
 
       
   return (
-    <div className="p-4 rounded-lg  h-[500px] flex flex-col justify-between">
-      <div className=" bg-[#FFD7BE] relative">
+    <div className="  rounded-lg  h-[500px] ml-4 flex flex-col justify-between">
+      <div className="  bg-[#FFD7BE] relative">
         <img src={product.image} className="" alt={product.name} />
         <img src={Star} alt="Star" className="h-8 absolute top-2 right-2 m-2" />
       </div>
@@ -146,7 +146,7 @@ const ProductList = () => {
   return (
     <div className="relative">
      
-      <h1 className="text-2xl font-medium ml-10">Eye Shadow</h1>
+      <h1 className=" text-2xl mb-4 font-medium ml-10">Eye Shadow</h1>
       <div className="relative flex items-center">
         <button className="absolute left-0 z-10 p-2">
           <img src={Arrowl} alt="Arrow Left" className="h-8" />
