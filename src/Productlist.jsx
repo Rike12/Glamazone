@@ -10,10 +10,10 @@ import Eyeshadow from './Eyeshadow';
 const ProductList = () => {
     return (
       <div  className="w-[1400px] h-[2456px]">
-      <div className='mt-10'> <Lips/></div>
-      <div className='mt-10'><Foundation/></div> 
-       <div className='mt-10'><Powder/></div>
-       <div className='pb-10 mt-10'>  <Eyeshadow/></div>
+      <div className='lg:mt-10'> <Lips/></div>
+      <div className='lg:mt-10'><Foundation/></div> 
+       <div className='lg:mt-10'><Powder/></div>
+       <div className='lg:pb-10 lg:mt-10'>  <Eyeshadow/></div>
      
       </div>
     );
