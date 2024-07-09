@@ -41,7 +41,7 @@ const Shopping = () => {
   const subtotal = products.reduce((acc, product) => acc + parseFloat(product.total.replace(/[^0-9.-]+/g, '')), 0).toFixed(2);
 
   return (
-    <div className="p-2 ml-5 h-auto w-full lg:w-[1350px] mb-10 overflow-hidden">
+    <div className="p-2 ml-5 h-auto lg:w-[1350px] mb-10 overflow-hidden">
       <h2 className="text-center text-2xl font-semibold">Shopping Cart</h2>
       <div className="w-full mt-8">
         {products.map(product => (

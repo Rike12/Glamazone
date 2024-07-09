@@ -140,7 +140,7 @@ const ProductList = () => {
     <div className="relative">
       <div className='flex justify-between'>
       <h1 className="text-2xl mb-4 font-medium ml-10">Foundation</h1>
-      <button className="absolute right-6 z-10">
+      <button className=" mr-20"> 
           <img src={Arrowr} alt="Arrow Right" className="h-8" />
         </button>
         </div>
@@ -148,7 +148,7 @@ const ProductList = () => {
        
         <div className="flex space-x-6 mx-5 ">
           {productList.map((product) => (
-            <div key={product.id} className="min-w-[300px]">
+            <div key={product.id} className="min-w-[310px]">
               <Foundation product={product} />
             </div>
           ))}

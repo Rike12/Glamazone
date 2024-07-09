@@ -110,7 +110,7 @@ const Lips = ({ product }) => {
 
       
   return (
-    <div className="rounded-lg ml-4   h-[500px] flex flex-col justify-between">
+    <div className="rounded-lg ml-3   h-[500px] flex flex-col justify-between">
       <div className=" bg-[#FFD7BE] relative h-[350px] w-[300px]  ">
         <img src={product.image} className="" alt={product.name} />
         <img src={Star} alt="Star" className="h-8 absolute top-2 right-2 m-2" />
@@ -154,7 +154,7 @@ const ProductList = () => {
       <h1 className="text-2xl font-semibold mb-2 text-center">Our products</h1>
       <div className='flex justify-between'>
       <h1 className="text-2xl mb-4 font-medium ml-10">Lips</h1>
-      <button className="absolute right-6 z-10">
+      <button className=" mr-20"> 
           <img src={Arrowr} alt="Arrow Right" className="h-8" />
         </button>
         </div>
@@ -162,7 +162,7 @@ const ProductList = () => {
        
         <div  className="flex space-x-6 mx-5 overflow-x-hidden scrollbar-hide">
           {productList.map((product) => (
-            <div key={product.id} className="min-w-[300px]">
+            <div key={product.id} className="min-w-[310px]">
               <Lips product={product} />
             </div>
           ))}

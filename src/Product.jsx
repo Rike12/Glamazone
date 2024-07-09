@@ -6,7 +6,7 @@ import ProductList from './Productlist';
 
 const Product = () => {
   return (
-    <div className="w-[1440px] h-[3400px] bg-[#FFF4F4]">
+    <div className=" bg-[#FFF4F4] overflow-hidden">
       <Header/>
       <Hero/>
       <ProductList/>
