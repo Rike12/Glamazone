@@ -111,7 +111,7 @@ const Lips = ({ product }) => {
       
   return (
     <div className="rounded-lg ml-3   h-[500px] flex flex-col justify-between">
-      <div className=" bg-[#FFD7BE] relative h-[350px] w-[300px]  ">
+      <div className=" bg-[#FFD7BE] relative h-[350px] lg:w-[300px]  ">
         <img src={product.image} className="" alt={product.name} />
         <img src={Star} alt="Star" className="h-8 absolute top-2 right-2 m-2" />
       </div>

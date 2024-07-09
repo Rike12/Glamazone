@@ -36,18 +36,18 @@ const ShoppingCart = () => {
   };
 
   return (
-    <div className="w-[1400px]">
+    <div className="w-full md:w-[1400px]">
       <div className="p-6">
         {cartItems.map((item) => (
-          <div key={item.id} className="flex gap-6 border-b-2 border-gray-300 py-2 mb-6 w-full">
-            <div className="w-1/6 bg-[#FFD7BE]">
+          <div key={item.id} className="flex flex-col md:flex-row gap-6 border-b-2 border-gray-300 py-2 mb-6 w-full">
+            <div className="w-full md:w-1/6 bg-[#FFD7BE]">
               <img src={item.image} alt={item.name} className="w-full" />
             </div>
-            <div className="flex justify-between w-[760px] pl-4">
+            <div className="flex flex-col md:flex-row justify-between w-full md:w-[760px] pl-4">
               <div className="flex flex-col flex-1 mt-6">
-                <span className="flex justify-between">
+                <span className="flex flex-col md:flex-row justify-between">
                   <h3 className="text-lg font-semibold mt-4 mb-6">{item.name}</h3>
-                  <div className="flex items-center">
+                  <div className="flex items-center mt-4 md:mt-0">
                     <button className="text-gray-600 hover:text-gray-900 flex">
                       <img src={Minus} alt="Decrease quantity" />
                       <span className="mx-3 mt-3">{item.quantity}</span>
@@ -55,14 +55,14 @@ const ShoppingCart = () => {
                     </button>
                   </div>
                 </span>
-                <div className="flex justify-between ">
+                <div className="flex flex-col md:flex-row justify-between">
                   <div className="flex-1 flex flex-col">
                     <p>Total</p>
-                    <h3 className="text-lg font-medium">{item.price}</h3>
+                    <h3 className="text-lg font-medium">₦{item.price}</h3>
                   </div>
-                  <div className="flex-1 flex flex-col">
+                  <div className="flex-1 flex flex-col mt-4 md:mt-0">
                     <p>Total</p>
-                    <h3 className="text-lg font-medium">{item.price}</h3>
+                    <h3 className="text-lg font-medium">₦{item.price}</h3>
                   </div>
                   <img src={Delete} alt="Delete item" className="w-4 h-4 mt-5 cursor-pointer" />
                 </div>
@@ -70,13 +70,12 @@ const ShoppingCart = () => {
             </div>
           </div>
         ))}
-        <div className="flex justify-between items-center border-b-2 border-gray-300 mt-24  mb-6 w-full">
-         
-          <div className=''>
+        <div className="flex flex-col md:flex-row justify-between items-center border-b-2 border-gray-300 mt-24 mb-6 w-full">
+          <div className="mb-4 md:mb-0">
             <p className="text-lg font-semibold">Grand Total ({cartItems.length} items)</p>
           </div>
           <div>
-            <p className="text-lg font-semibold mr-80">₦{getTotal()}</p>
+            <p className="text-lg font-semibold">₦{getTotal()}</p>
           </div>
         </div>
       </div>
