@@ -3,8 +3,7 @@ import './App.css';
 import Star from './assets/star.png';
 import Plus from './assets/plus.png';
 import Minus from './assets/minus.png';
-import Arrowr from './assets/circler.png';
-import Arrowl from './assets/circlel.png';
+import Arrowr from './assets/right.png';
 import Frame1 from './assets/shadow/frame1.png';
 import Frame2 from './assets/shadow/frame2.png';
 import Frame3 from './assets/shadow/frame3.png';
@@ -19,7 +18,7 @@ import Frame10 from './assets/shadow/frame10.png';
 const productList = [
   {
     id: 1,
-    category: 'Lips',
+    category: 'Eyeshadow',
     name: 'Clarins Ombre 4 Couleurs Eyeshadow Palette 08 Amber Gradation 4.2g',
     image: Frame1,
     price: '₦89,048.50',
@@ -27,7 +26,7 @@ const productList = [
   },
   {
     id: 2,
-    category: 'Lips',
+    category: 'Eyeshadow',
     name: 'Bellapierre Cosmetics Eyeshadow Palette 35 Colors Emerald City',
     image: Frame2,
     price: '₦69,498.51',
@@ -35,7 +34,7 @@ const productList = [
   },
   {
     id: 3,
-    category: 'Lips',
+    category: 'Eyeshadow',
     name: 'M.A.C Cosmetics Powder Kiss Soft Matte Eye Shadow My Tweedy 1.5g',
     image: Frame3,
     price: '₦52,545.32',
@@ -43,7 +42,7 @@ const productList = [
   },
   {
     id: 4,
-    category: 'Lips',
+    category: 'Eyeshadow',
     name: 'Sisley Paris Phyto-Eye Twist Waterproof Long Lasting Eyeshadow 18 Fawn 1.5g',
     image: Frame4,
     price: '₦22,845.92',
@@ -51,7 +50,7 @@ const productList = [
   },
   {
     id: 5,
-    category: 'Lips',
+    category: 'Eyeshadow',
     name: 'Dr. Hauschka Eyeshadow 08 Golden Topaz 1.4g',
     image: Frame5,
     price: '₦52,545.32',
@@ -59,7 +58,7 @@ const productList = [
   },
   {
     id: 6,
-    category: 'Lips',
+    category: 'Eyeshadow',
     name: 'CHANEL Ombre Première Longwear Powder Eyeshadow 36 Désert Rouge 2.2g',
     image: Frame6,
     price: '₦56,615.86',
@@ -67,14 +66,14 @@ const productList = [
   },
   {
     id: 7,
-    category: 'Lips',
+    category: 'Eyeshadow',
     name: 'Lancôme Hypnôse Eyeshadow Palette 01 French Nude 4g',
     image: Frame7,
     price: '₦116,880.19',
   },
   {
     id: 8,
-    category: 'Lips',
+    category: 'Eyeshadow',
     name: 'Guerlain Ombres G Multi-Effect Eyeshadow Quad 011 Imperial Moon',
     image: Frame8,
     price: '₦133,362.88',
@@ -82,7 +81,7 @@ const productList = [
   },
   {
     id: 9,
-    category: 'Lips',
+    category: 'Eyeshadow',
     name: 'Anastasia Beverly Hills Cosmos Eyeshadow Palette',
     image: Frame9,
     price: '₦126,889.27',
@@ -90,7 +89,7 @@ const productList = [
   },
   {
     id: 10,
-    category: 'Lips',
+    category: 'Eyeshadow',
     name: 'Flormar Eyeshadow Palette 006 Felt Cute 9g',
     image: Frame10,
     price: '₦27,347.38',
@@ -146,11 +145,14 @@ const ProductList = () => {
   return (
     <div className="relative">
      
-      <h1 className=" text-2xl mb-4 font-medium ml-10">Eye Shadow</h1>
-      <div className="relative flex items-center">
-        <button className="absolute left-0 z-10 p-2">
-          <img src={Arrowl} alt="Arrow Left" className="h-8" />
+     <div className='flex justify-between'>
+      <h1 className="text-2xl mb-4 font-medium ml-10">Eyeshadow</h1>
+      <button className="absolute right-6 z-10">
+          <img src={Arrowr} alt="Arrow Right" className="h-8" />
         </button>
+        </div>
+      <div className="relative flex items-center">
+        
         <div  className="flex space-x-6 mx-5 overflow-x-hidden scrollbar-hide">
           {productList.map((product) => (
             <div key={product.id} className="min-w-[300px]">
@@ -158,9 +160,7 @@ const ProductList = () => {
             </div>
           ))}
         </div>
-        <button  className="absolute right-0 z-10 p-2">
-          <img src={Arrowr} alt="Arrow Right" className="h-8" />
-        </button>
+       
       </div>
     </div>
   );

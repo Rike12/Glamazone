@@ -3,8 +3,7 @@ import './App.css';
 import Star from './assets/star.png';
 import Plus from './assets/plus.png';
 import Minus from './assets/minus.png';
-import Arrowr from './assets/circler.png';
-import Arrowl from './assets/circlel.png';
+import Arrowr from './assets/right.png';
 import Frame1 from './assets/Foundation/frame1.png';
 import Frame2 from './assets/Foundation/frame2.png';
 import Frame3 from './assets/Foundation/frame3.png';
@@ -101,7 +100,7 @@ const productList = [
 
 const Foundation = ({ product }) => {
   return (
-    <div className="rounded-lg  h-[500px] ml-4 flex flex-col justify-between">
+    <div className="rounded-lg h-[500px] ml-4 flex flex-col justify-between">
       <div className="bg-[#FFD7BE] relative">
         <img src={product.image} className="" alt={product.name} />
         <img src={Star} alt="Star" className="h-8 absolute top-2 right-2 m-2" />
@@ -138,22 +137,23 @@ const Foundation = ({ product }) => {
 
 const ProductList = () => {
   return (
-    <div className=" relative">
+    <div className="relative">
+      <div className='flex justify-between'>
       <h1 className="text-2xl mb-4 font-medium ml-10">Foundation</h1>
-      <div className="relative flex items-center">
-        <button className="absolute left-0 z-10 p-2">
-          <img src={Arrowl} alt="Arrow Left" className="h-8" />
+      <button className="absolute right-6 z-10">
+          <img src={Arrowr} alt="Arrow Right" className="h-8" />
         </button>
-        <div className="flex space-x-6 mx-5 overflow-x-hidden scrollbar-hide">
+        </div>
+      <div className="relative flex items-center">
+       
+        <div className="flex space-x-6 mx-5 ">
           {productList.map((product) => (
             <div key={product.id} className="min-w-[300px]">
               <Foundation product={product} />
             </div>
           ))}
         </div>
-        <button className="absolute right-0 z-10 p-2">
-          <img src={Arrowr} alt="Arrow Right" className="h-8" />
-        </button>
+       
       </div>
     </div>
   );
