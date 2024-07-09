@@ -10,7 +10,7 @@ const Hero = () => {
         className="relative h-[560px] bg-repeat-x pb-20 bg-contain"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="mb-80 pt-20  max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
+        <div className=" absolute mb-80 pt-20  max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
           <div className="text-[16px] sm:text-[18px] md:text-[20px] text-center tracking-wide text-black font-medium  mb-10 mt-12">
             <p>
               Start your beauty journey with{' '}
